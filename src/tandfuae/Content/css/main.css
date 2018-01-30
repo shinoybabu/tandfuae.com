@@ -232,13 +232,13 @@ ul.social-share li a:hover {
   color:#7270f79c;
 }
 .navbar-header a.navbar-brand {
-  color:white;
+  color:rgb(0, 90, 102);
 }
 
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #221f54;
+  background: #ffffff;
   padding: 15px 0;
   padding-bottom: 0;
   box-shadow: 0px 5px 5px #3a353561;
@@ -261,14 +261,14 @@ border: 1px solid #beb6de;
   padding: 5px 12px;
   margin: 0;
   border-radius: 3px;
-  color: #fff;
+  color: rgb(0, 90, 102);
   line-height: 24px;
   display: inline-block;
 }
 
 .navbar-fixed-top .navbar-nav > li > a:hover{
 	background-color: #7270f79c;
-  color: #fff;
+  color: rgb(0, 90, 102);
 }
 
 .navbar-fixed-top {
@@ -276,7 +276,7 @@ border: 1px solid #beb6de;
 }
 
 .navbar-fixed-top .navbar-brand {
-  font-size: 36px;
+  font-size: 46px;
   line-height: 50px;
   color: #fff;
 }

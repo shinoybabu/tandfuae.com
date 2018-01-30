@@ -30,5 +30,11 @@ namespace tandfuae.Controllers
 
             return View();
         }
+        public ActionResult ourservices()
+        {
+            ViewBag.Message = "Our services page.";
+
+            return View();
+        }        
     }
 }
