@@ -1,17 +1,21 @@
 jQuery(function($) {
 
-    $(document).ready(function () {
-        if (window.location.href.indexOf("index") > -1) {
-            console.log("index");
-            $("#menu-index").addClass("active");
-        }
-        else if (window.location.href.indexOf("about") > -1) {
+    $(document).ready(function () {        
+        if (window.location.href.indexOf("about") > -1) {
             console.log("about");
             $("#menu-about").addClass("active");
         }
         else if (window.location.href.indexOf("contact") > -1) {
             console.log("contact");
             $("#menu-contact").addClass("active");
+        }
+        else if (window.location.href.indexOf("ourservices") > -1) {
+            console.log("ourservices");
+            $("#menu-ourservices").addClass("active");
+        }        
+        else{
+            console.log("index");
+            $("#menu-index").addClass("active");
         }
     });
 	
