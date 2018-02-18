@@ -3,14 +3,10 @@
 @{
     ViewBag.Title = "SeeContactUs";
 }
-<br />
-<h2>SeeContactUs</h2>
+<br /><br /><br /><br />
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
-    <tr>
+    <tr>       
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -24,16 +20,19 @@
             @Html.DisplayNameFor(model => model.Message)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Phon)
+            @Html.DisplayNameFor(model => model.Phone)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CompanyNam)
+            @Html.DisplayNameFor(model => model.CompanyName)
         </th>
-        @*<th></th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.CreatdAt)
+        </th>
     </tr>
 
 @foreach (var item in Model) {
-    <tr>       
+    <tr>
+       
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
@@ -47,16 +46,15 @@
             @Html.DisplayFor(modelItem => item.Message)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Phon)
+            @Html.DisplayFor(modelItem => item.Phone)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CompanyNam)
+            @Html.DisplayFor(modelItem => item.CompanyName)
         </td>
-        @*<td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ContactUsKey }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ContactUsKey }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ContactUsKey })
-        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatdAt)
+        </td>
+        
     </tr>
 }
 

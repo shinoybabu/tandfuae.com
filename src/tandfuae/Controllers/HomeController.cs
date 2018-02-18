@@ -52,6 +52,7 @@ namespace tandfuae.Controllers
             return View(contactUs);                
         }
 
+        [Authorize]
         public ActionResult SeeContactUs()
         {
             using (var ctx = new ContactUsContext())

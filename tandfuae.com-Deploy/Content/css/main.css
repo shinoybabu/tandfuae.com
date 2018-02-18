@@ -1906,7 +1906,6 @@ width:100%}
 #menu a {
 font-size:20px;
 }
-.contactus {
-width:40%;
-padding-left:20px;
+.contactus label{
+    white-space: nowrap;
 }
